@@ -1,0 +1,44 @@
+$paleBlue: hsl(225, 100%, 94%);
+$brightBlue: hsl(245, 75%, 52%);
+$veryPaleBlue: hsl(225, 100%, 98%);
+$desaturatedBlue: hsl(224, 23%, 55%);
+$darkBlue: hsl(223, 47%, 23%);
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // background: $desaturatedBlue;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    max-width: 1440;
+    .fondo{
+        width: 1440px;
+        position: absolute;
+        top: 0;
+        background-image: transparent;
+        z-index: -2;
+    }
+    // background: url('../images/pattern-background-desktop.svg') no-repeat;
+    background: $paleBlue;
+    .contenedor{
+        width: 30%;
+        margin: auto;
+        margin-top: 150px;
+        text-align: center;
+        // background: red;
+    }    
+    
+}
+
+.attribution { 
+    margin-top: 20px;
+    font-size: 11px; 
+    text-align: center; 
+    
+    a { 
+        color: hsl(228, 45%, 44%); 
+    }
+}
