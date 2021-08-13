@@ -8,23 +8,121 @@
 
 body {
   font-family: 'Red Hat Display', sans-serif;
-  max-width: 1440;
+  overflow: hidden;
   background: #e0e8ff;
 }
 
 body .fondo {
   width: 1440px;
+  height: 350px;
   position: absolute;
   top: 0;
-  background-image: transparent;
   z-index: -2;
 }
 
 body .contenedor {
-  width: 30%;
+  width: 400px;
   margin: auto;
-  margin-top: 150px;
+  margin-top: 50px;
   text-align: center;
+  background: #f5f7ff;
+  border-radius: 20px;
+  font-family: 'Red Hat Display', sans-serif;
+  padding: 0 0 10px 0;
+}
+
+body .contenedor .img-top {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+body .contenedor h1 {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+body .contenedor h2 {
+  font-size: 16px;
+  text-align: center;
+  margin: 20px 30px;
+  font-weight: 500;
+  font-family: 'Red Hat Display', sans-serif;
+  color: #7280a7;
+}
+
+body .contenedor .contenedor_plan {
+  position: relative;
+  background: rgba(114, 128, 167, 0.049);
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  text-align: left;
+  padding-left: 70px;
+}
+
+body .contenedor .contenedor_plan img {
+  position: absolute;
+  left: 10px;
+}
+
+body .contenedor .contenedor_plan span {
+  font-weight: 700;
+  font-size: 16px;
+  color: #1f2f56;
+}
+
+body .contenedor .contenedor_plan h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #7280a7;
+}
+
+body .contenedor .contenedor_plan a {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  color: #3829e0;
+}
+
+body .contenedor .contenedor_plan a:hover {
+  text-decoration: none;
+}
+
+body .contenedor .btn-proceed, body .contenedor .btn-cancelar {
+  display: block;
+  margin: 20px 0;
+  text-decoration: none;
+}
+
+body .contenedor .btn-proceed {
+  background: #3829e0;
+  width: 80%;
+  margin: 20px auto;
+  padding: 10px 0;
+  color: #f5f7ff;
+  font-weight: 700;
+  font: size 24px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+body .contenedor .btn-proceed:hover {
+  background: rgba(56, 41, 224, 0.754);
+}
+
+body .contenedor .btn-cancelar {
+  margin-top: 30px;
+  color: #7280a7;
+  font-weight: 700;
+  font: size 12px;
+  margin-bottom: 20px;
+}
+
+body .contenedor .btn-cancelar:hover {
+  color: black;
 }
 
 .attribution {
@@ -35,5 +133,17 @@ body .contenedor {
 
 .attribution a {
   color: #3e52a3;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    width: 100%;
+  }
+  body .fondo {
+    background: url(../images/pattern-background-mobile.svg);
+  }
+  body .contenedor {
+    width: 90%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

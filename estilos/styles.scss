@@ -4,6 +4,8 @@ $veryPaleBlue: hsl(225, 100%, 98%);
 $desaturatedBlue: hsl(224, 23%, 55%);
 $darkBlue: hsl(223, 47%, 23%);
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -13,22 +15,110 @@ $darkBlue: hsl(223, 47%, 23%);
 
 body{
     font-family: 'Red Hat Display', sans-serif;
-    max-width: 1440;
+    // height: 700px;
+    overflow: hidden;
     .fondo{
         width: 1440px;
+        height: 350px;
         position: absolute;
         top: 0;
-        background-image: transparent;
         z-index: -2;
     }
     // background: url('../images/pattern-background-desktop.svg') no-repeat;
     background: $paleBlue;
     .contenedor{
-        width: 30%;
+        width: 400px;
+        // height: 600px;
         margin: auto;
-        margin-top: 150px;
+        margin-top: 50px;
         text-align: center;
-        // background: red;
+        background: $veryPaleBlue;
+        border-radius: 20px;
+        font-family: 'Red Hat Display', sans-serif;
+        padding: 0 0 10px 0;
+        .img-top{
+            width: 100%;
+            border-radius: 20px 20px 0 0 ;
+        }
+
+        h1{
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: 700;
+            font-family: 'Red Hat Display', sans-serif;
+        }
+
+        h2{
+            font-size:16px;
+            text-align: center;
+            margin: 20px 30px;
+            font-weight: 500;
+            font-family: 'Red Hat Display', sans-serif;
+            color: $desaturatedBlue;
+        }
+
+        .contenedor_plan{
+            position: relative;
+            background:hsla(224, 23%, 55%, 0.049);
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            text-align: left;
+            padding-left: 70px;
+            img{
+                position: absolute;
+                left: 10px;
+            }
+            span{
+                font-weight: 700;
+                font-size: 16px;
+                color: $darkBlue;
+            }
+            h3{
+                font-size: 16px;
+                font-weight: 500;
+                color: $desaturatedBlue;
+            }
+            a{
+                position: absolute;
+                right: 30px;
+                bottom: 30px;
+                // text-decoration: none;
+                color: $brightBlue;
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+        }
+        .btn-proceed,.btn-cancelar{
+            display: block;
+            margin: 20px 0;
+            text-decoration: none;
+        }
+        .btn-proceed{
+            background: $brightBlue;
+            width: 80%;
+            margin: 20px auto;
+            padding: 10px 0;
+            color: $veryPaleBlue;
+            font-weight: 700;
+            font: size 24px;
+            border-radius: 8px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            &:hover{
+                background:hsla(245, 75%, 52%, 0.754);
+            }
+        }
+        .btn-cancelar{
+            margin-top: 30px;
+            color: $desaturatedBlue;
+            font-weight: 700;
+            font: size 12px;
+            margin-bottom: 20px;
+            &:hover{
+                color: black;
+            }
+        }
     }    
     
 }
@@ -41,4 +131,19 @@ body{
     a { 
         color: hsl(228, 45%, 44%); 
     }
+}
+
+@media screen and (max-width:500px ) {
+    body{
+        width: 100%;
+        // 
+        // background: black;
+        .fondo{
+            background: url(../images/pattern-background-mobile.svg);
+        }
+        .contenedor{
+            width: 90%;
+        }
+    }
+    
 }
